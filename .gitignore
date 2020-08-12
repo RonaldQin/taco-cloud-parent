@@ -1,4 +1,7 @@
-.settings
+.settings/
 .project
 .classpath
 target/
+node/
+node_modules/
+npm-debug.log
