@@ -44,6 +44,9 @@ public class Order implements Serializable {
 	private String deliveryStreet;
 
 	@NotBlank(message = "City is required")
+	private String deliveryCity;
+
+	@NotBlank(message = "State is required")
 	private String deliveryState;
 
 	@NotBlank(message = "Zip code is required")

@@ -1,0 +1,17 @@
+spring:
+  security:
+    user:
+      name: buzz
+      password: infinity
+      
+taco:
+  orders:
+    pageSize: 10
+    
+  discount:
+    codes:
+      abcdef: 10
+      
+#logging:#  level:#    org.springframework.data.rest: debug
+    
+    

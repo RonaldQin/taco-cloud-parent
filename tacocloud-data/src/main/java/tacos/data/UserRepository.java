@@ -6,6 +6,6 @@ import tacos.User;
 
 public interface UserRepository extends CrudRepository<User, Long> {
 
-	User findBuUsername(String username);
+	User findByUsername(String username);
 
 }
