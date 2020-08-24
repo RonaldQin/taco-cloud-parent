@@ -8,16 +8,15 @@ public class TacoResourceAssembler extends ResourceAssemblerSupport<Taco, TacoRe
 
 	public TacoResourceAssembler() {
 		super(DesignTacoController.class, TacoResource.class);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
-	public TacoResource toResource(Taco entity) {
-		return createResourceWithId(entity.getId(), entity);
+	public TacoResource toResource(Taco taco) {
+		return createResourceWithId(taco.getId(), taco);
 	}
 
 	@Override
-	protected TacoResource instantiateResource(Taco entity) {
-		return new TacoResource(entity);
+	protected TacoResource instantiateResource(Taco taco) {
+		return new TacoResource(taco);
 	}
 }

@@ -8,7 +8,6 @@
   <artifactId>taco-cloud</artifactId>
   <name>taco-cloud</name>
   <description>Taco Cloud Example</description>
-  <packaging>jar</packaging>
   
   <properties>
   	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -17,7 +16,6 @@
   </properties>
   
   <dependencies>
-  	<!-- TacoCloud dependencies -->
   	<dependency>
   		<groupId>sia</groupId>
   		<artifactId>tacocloud-data</artifactId>
@@ -35,16 +33,16 @@
   	</dependency>
   	<dependency>
   		<groupId>sia</groupId>
-  		<artifactId>tacocloud-api</artifactId>
+  		<artifactId>tacocloud-ui</artifactId>
   		<version>${tacocloud.version}</version>
   	</dependency>
   	<dependency>
   		<groupId>sia</groupId>
-  		<artifactId>tacocloud-ui</artifactId>
+  		<artifactId>tacocloud-api</artifactId>
   		<version>${tacocloud.version}</version>
   	</dependency>
   	
-  	<!--  Run against embedded H2 database by default -->
+  	<!-- Run against embedded H2 database by default -->
   	<dependency>
   		<groupId>com.h2database</groupId>
   		<artifactId>h2</artifactId>
