@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import tacos.Ingredient.Type;
 import tacos.data.IngredientRepository;
 import tacos.data.TacoRepository;
 import tacos.data.UserRepository;
@@ -20,7 +21,7 @@ public class DevelopmentConfig {
 
 			@Override
 			public void run(String... args) throws Exception {
-
+				Ingredient flourTortilla = new Ingredient("FLTO", "Flour Tortilla", Type.WRAP);
 			}
 		};
 	}
